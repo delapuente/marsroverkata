@@ -1,5 +1,3 @@
-'use strict';
-
 var Grid = {
   init: function (sizeX, sizeY) {
     this.sizeX = sizeX;
@@ -10,7 +8,7 @@ var Grid = {
     this.obstacles = obstacles;
   },
   thereIsObstacle: function (x, y) {
-    for (var i = 0; i < this.obstacles.length; i++) {
+    for (i = 0; i < this.obstacles.length; i++) {
       var obstacle = this.obstacles[i];
       if (obstacle[0] === x && obstacle[1] === y) {
         return true;
@@ -26,7 +24,7 @@ var Rover = {
     this.orientation = orientation;
   },
   move: function (commands) {
-    for (var i = 0; i < commands.length; i++) {
+    for (i = 0; i < commands.length; i++) {
       var c = commands[i];
       switch (c) {
         case 'f':

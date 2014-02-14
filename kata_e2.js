@@ -67,8 +67,8 @@ var Rover = {
       break;
       case 'w':
         this.position[0] = (this.position[0] - 1);
-        if (this.position[0] < 0) {
-          this.position[0] = Grid.sizeX + this.position[0];
+        if (this.position[1] < 0) {
+          this.position[1] = Grid.sizeY + this.position[1];
         }
       break;
     }

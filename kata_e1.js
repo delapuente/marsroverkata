@@ -106,7 +106,7 @@ var Rover = {
     }
   },
   turnRight: function () {
-    switch (this.orientation) {
+    switch (this.orietnation) {
       case 'n':
         this.orientation = 'e';
       break;

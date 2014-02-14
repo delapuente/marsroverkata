@@ -1,4 +1,3 @@
-'use strict';
 
 var Grid = {
   init: function (sizeX, sizeY) {
@@ -48,10 +47,7 @@ var Rover = {
     }
   },
   moveForward: function () {
-    var formerPosition = [
-      this.position[0],
-      this.position[1]
-    ];
+    var formerPosition = this.position;
     switch (this.orientation) {
       case 'n':
         this.position[1] = (this.position[1] + 1) % Grid.sizeY;

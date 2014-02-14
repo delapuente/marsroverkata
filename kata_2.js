@@ -106,34 +106,34 @@ var Rover = {
     }
   },
   turnRight: function () {
-    switch (this.orientation) {
+    switch (this.direction) {
       case 'n':
-        this.orientation = 'e';
+        this.direction = 'e';
       break;
       case 'e':
-        this.orientation = 's';
+        this.direction = 's';
       break;
       case 's':
-        this.orientation = 'w';
+        this.direction = 'w';
       break;
       case 'w':
-        this.orientation = 'n';
+        this.direction = 'n';
       break;
     }
   },
   turnLeft: function () {
-    switch (this.orientation) {
+    switch (this.direction) {
       case 'n':
-        this.orientation = 'w';
+        this.direction = 'w';
       break;
       case 'w':
-        this.orientation = 's';
+        this.direction = 's';
       break;
       case 's':
-        this.orientation = 'e';
+        this.direction = 'e';
       break;
       case 'e':
-        this.orientation = 'n';
+        this.direction = 'n';
       break;
     }
   }

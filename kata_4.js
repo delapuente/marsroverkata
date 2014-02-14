@@ -252,14 +252,14 @@ console.log('Is facing s: ' + (Rover.orientation === 's'));
 
 console.log('\nIt collisions with obstacles preventing it from move.');
 Grid.init(3, 3);
-Grid.setObstacles([[1,2]]);
+Grid.setObstacles([1,2]);
 Rover.init(1, 1, 'n');
 Rover.move('f');
 console.log('Is in 1,1: ' + (Rover.position[0] === 1 && Rover.position[1] === 1));
 
 console.log('\nIt can follow a complex route.');
 Grid.init(3, 3);
-Grid.setObstacles([[1,2]]);
+Grid.setObstacles([1,2]);
 Rover.init(0, 0, 'n');
 Rover.move('ffrflbrfflff');
 console.log('Is in 2,0: ' + (Rover.position[0] === 2 && Rover.position[1] === 0));
