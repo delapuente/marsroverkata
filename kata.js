@@ -1,15 +1,17 @@
-'use strict';
 
 var Grid = {
   init: function (sizeX, sizeY) {
+    'use strict';
     this.sizeX = sizeX;
     this.sizeY = sizeY;
     this.obstacles = [];
   },
   setObstacles: function (obstacles) {
+    'use strict';
     this.obstacles = obstacles;
   },
   thereIsObstacle: function (x, y) {
+    'use strict';
     for (var i = 0; i < this.obstacles.length; i++) {
       var obstacle = this.obstacles[i];
       if (obstacle[0] === x && obstacle[1] === y) {
@@ -22,10 +24,12 @@ var Grid = {
 
 var Rover = {
   init: function (x, y, orientation) {
+    'use strict';
     this.position = [x, y];
     this.orientation = orientation;
   },
   move: function (commands) {
+    'use strict';
     for (var i = 0; i < commands.length; i++) {
       var c = commands[i];
       switch (c) {
@@ -48,6 +52,7 @@ var Rover = {
     }
   },
   moveForward: function () {
+    'use strict';
     var formerPosition = [
       this.position[0],
       this.position[1]
@@ -77,6 +82,7 @@ var Rover = {
     }
   },
   moveBackward: function () {
+    'use strict';
     var formerPosition = [
       this.position[0],
       this.position[1]
@@ -106,6 +112,7 @@ var Rover = {
     }
   },
   turnRight: function () {
+    'use strict';
     switch (this.orientation) {
       case 'n':
         this.orientation = 'e';
@@ -122,6 +129,7 @@ var Rover = {
     }
   },
   turnLeft: function () {
+    'use strict';
     switch (this.orientation) {
       case 'n':
         this.orientation = 'w';

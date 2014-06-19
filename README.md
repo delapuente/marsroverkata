@@ -13,7 +13,7 @@ This repository is intended to demonstrate some programming techniques beyond th
 
 ## A simple test-suite
 
-For developing to be a little bit easier I wrote some tests. As long as you respect the API, your program should pass all the tests. You can put them after your program or in a different script file. It's up to you:
+For developing to be a little bit easier I wrote some tests. As long as you respect the API, your program should pass all the tests (it should show `true` for all the logs). You can put them after your program or in a different script file. It's up to you:
 
 ```javascript
 console.log('Describing the Rover:');
