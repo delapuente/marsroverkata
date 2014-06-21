@@ -79,6 +79,6 @@ When we are modularizing our code, the risk of providing the same name for two d
 
 Modules have another advantage. We can add a unique `'use strict'` directive at the beginning of the autofunction and all our code will be affected without adding the pragma once for each module function.
 
-## Applyed to the Mars Rover Kata
+## Applied to the Mars Rover Kata
 
 Modularize your code into three modules. One for the grid, another for the rover and one more for the tests. Notice the grid and rover modules will export two objects while the test is in charge only for executing the suite. Remember to add the new modules in the proper order to the `index.html` file.
