@@ -72,6 +72,8 @@ Rover.move('f');
 console.log('Is in 2,1: ' + (Rover.position[0] === 2 && Rover.position[1] === 1));
 ```
 
+For `debugger` to work it is **very important the debugger is already open**.
+
 Now refresh the page to run the tests again and the execution will stop just when reaching  the `debugger` instruction. This command is very useful for those bugs that can prevent you from stopping the execution when desired. They can be put inside a _if statement_ for make them conditionals.
 
 Try to debug this example by your own.
