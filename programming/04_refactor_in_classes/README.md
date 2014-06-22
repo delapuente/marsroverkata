@@ -213,8 +213,8 @@ Rover.prototype._advance = function (steps) {
   var realIncrementX = increment[0] * steps;
   var realIncrementY = increment[1] * steps;
 
-  var x1 = (x0 + realIncrementX + this.map.sizeX) % this.map.sizeX;
-  var y1 = (y0 + realIncrementY + this.map.sizeY) % this.map.sizeY;
+  var x1 = (x0 + realIncrementX + Grid.sizeX) % Grid.sizeX;
+  var y1 = (y0 + realIncrementY + Grid.sizeY) % Grid.sizeY;
 
   if (!Grid.thereIsObstacle(x1, y1)) {
     this.position = [x1, y1];
