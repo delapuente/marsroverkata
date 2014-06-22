@@ -1,3 +1,4 @@
+debugger;
 (function () {
   var Grid = {
     init: function (sizeX, sizeY) {
