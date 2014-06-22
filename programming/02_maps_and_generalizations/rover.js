@@ -15,8 +15,7 @@
         }
 
         var actionName = this._actionsByCommand[c];
-        var action = this[actionName].bind(this);
-        action();
+        this[actionName]();
       }
     },
     _actionsByCommand: {
